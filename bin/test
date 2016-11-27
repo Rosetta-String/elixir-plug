@@ -1,0 +1,5 @@
+#!/bin/bash
+
+psql $DATABASE_URL -f ./script/drop_tables.sql
+psql $DATABASE_URL -f ./script/create_tables.sql
+mix deps && mix test

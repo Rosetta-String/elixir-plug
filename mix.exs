@@ -14,7 +14,10 @@ defmodule RosettaString.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger, :postgrex, :ecto, :cowboy, :plug]]
+    [
+      applications: [:logger, :postgrex, :ecto, :cowboy, :plug],
+      mod: {RosettaString, []}
+    ]
   end
 
   # Dependencies can be Hex packages:

@@ -1,4 +1,4 @@
 #!/bin/bash
 
 psql $DATABASE_URL -f ./script/create_tables.sql
-mix deps && mix server -p $PORT
+mix deps && mix run --no-halt
